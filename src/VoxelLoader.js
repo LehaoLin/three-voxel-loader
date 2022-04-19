@@ -69,7 +69,7 @@ export class VoxelLoader {
 	 * @param {Function} [onProgress] - Callback for download progress.
 	 * @param {Function} [onError] - Callback for download errors.
 	 */
-  loadFile(url, onLoad, onProgress, onError) {
+  load(url, onLoad, onProgress, onError) {
     let scope = this;
     let extension = url.split('.').pop().toLowerCase();
     let loaderFactory = new LoaderFactory(this.manager);
